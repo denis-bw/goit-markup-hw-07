@@ -1,0 +1,125 @@
+.menu-list1 {
+    column-gap: 50px;
+    display: flex;
+}
+
+.menu-list2 {
+    display: flex;
+    column-gap: 50px;
+    margin-left: auto;
+}
+
+
+
+.logo-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 19;
+    letter-spacing: 0.03em;
+    color: #000;
+
+    .nav & {
+    margin-right: 93px;
+    }
+}
+
+.logo-text-span {
+    color: var(--barand-color);
+}
+
+.menu-list1__link {
+    padding: 32px 0px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    position: relative;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        background-color: var(--barand-color);
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        display: block;
+
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: scaleX(0);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        transform: scaleX(1);
+    }
+
+    &:hover,
+    &:focus{
+        color: var(--barand-color); 
+    }
+
+}
+
+.menu-list1 .active {
+    color: var(--barand-color);
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: var(--barand-color);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    display: block;
+    transform: scaleX(1);
+}
+
+.menu-list2__link-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 1px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--barand-color);
+    }
+}
+
+.menu-list2__icon-mail {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.menu-list2__icon-telef {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}
