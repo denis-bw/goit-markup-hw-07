@@ -4,16 +4,16 @@
     column-gap: 30px
 }
 
-.peculiarities > .item {
+.peculiarities > .peculiarities__item {
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.antenna-icon {
+.peculiarities__svg-icon {
     width: 70px;
     height: 70px;
 }
 
-.item-icon {
+.peculiarities__item-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
     border-radius: 4px;
 }
 
-.text-headline {
+.peculiarities__text-headline {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -34,7 +34,7 @@
     text-transform: uppercase;
 }
 
-.text-description {
+.peculiarities__text-description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
