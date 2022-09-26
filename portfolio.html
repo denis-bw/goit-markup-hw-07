@@ -17,16 +17,23 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="container navigation">
+        <div class="container main-header__container">
+            <a class="logo-text logo-text-padd link" href="./index.html"><span class="logo-text-span">Web</span>Studio</a>
+    
+            <button type="button" class="open-mobile-menu-btn" data-menu-open>
+                <svg class="open-mobile-menu-btn__icon" aria-label="переключатель мобильного меню">
+                    <use class="menu" href="./images/svg-sprite/sprite-icon.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+    
             <nav class="nav">
-                <a class="logo-text link" href="./index.html"><span class="logo-text-span">Web</span>Studio</a>
                 <ul class="list menu-list1">
                     <li><a class="link menu-list1__link" href="./index.html">Студія</a></li>
                     <li><a class="link menu-list1__link current active" href="./portfolio.html">Портфоліо</a></li>
                     <li><a class="link menu-list1__link" href="#contacts">Контакти</a></li>
                 </ul>
             </nav>
-
+    
             <ul class="list menu-list2">
                 <li class="menu-list2__header-address">
                     <a class="link menu-list2__link-header" href="mailto:info@devstudio.com" target="_blank">
@@ -36,7 +43,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="header-address">
+                <li class="menu-list2__header-address">
                     <a class="link menu-list2__link-header" href="tel:+380961111111" target="_blank">
                         <svg aria-label="іконка телефону" class="menu-list2__icon-telef">
                             <use href="./images/svg-sprite/sprite-icon.svg#icon-telef"></use>
@@ -45,8 +52,37 @@
                     </a>
                 </li>
             </ul>
-
         </div>
+    
+        <div class="mobail-menu " data-menu>
+            <div class="container mobail-menu__container">
+                <button type="button" class="close-mobile-menu-btn" data-menu-close>
+                    <svg class="close-mobile-menu-btn__icon" aria-label="переключатель мобильного меню">
+                        <use class="cross" href="./images/svg-sprite/sprite-icon.svg#icon-close_menu"></use>
+                    </svg>
+                </button>
+    
+                <ul class="list menu-list-mobaile">
+                    <li><a class="link menu-list-mobaile__link current active" href="./index.html">Студія</a></li>
+                    <li><a class="link menu-list-mobaile__link" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="link menu-list-mobaile__link" href="#contacts">Контакти</a></li>
+                </ul>
+                <ul class="list menu-mobaile-links">
+                    <li><a class="link menu-mobaile-links__link-header-tel" href="mailto:info@devstudio.com"
+                            target="_blank">info@devstudio.com</a></li>
+                    <li><a class="link menu-mobaile-links__link-header-mail" href="tel:+380961111111" target="_blank">+38
+                            096 111 11 11</a></li>
+                </ul>
+                <ul class="list menu-social-networks">
+                    <li><a class="link menu-social-networks__link" href="#">Instagram</a></li>
+                    <li><a class="link menu-social-networks__link" href="#">Twitter</a></li>
+                    <li><a class="link menu-social-networks__link" href="#">Facebook</a></li>
+                    <li><a class="link menu-social-networks__link menu-social-networks__link--border" href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
     </header>
     
     <main>
@@ -66,7 +102,7 @@
                     <li class="box-content">
                             <a class="box-content-link" href="">
                                 <div class="box-tumb">
-                                    <img src="./images/portfolio/portfolio-img1.jpg" alt="ноутбук з відкритою сторінкою веб-сайта" width="370">
+                                    <img class="img-portfolio"  src="./images/portfolio/portfolio-img1.jpg" alt="ноутбук з відкритою сторінкою веб-сайта" >
                                     
                                     <div class="overlay-tumb">
                                         <p class="text-tumb">
@@ -85,7 +121,7 @@
                     <li class="box-content">
                         <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img2.jpg" alt="баскетболісти"  width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img2.jpg" alt="баскетболісти"  >
                             
                                 <div class="overlay-tumb">
                                     <p class="text-tumb">
@@ -104,7 +140,7 @@
                     <li class="box-content">
                          <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img3.jpg" alt="лого ресторана Seafood"  width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img3.jpg" alt="лого ресторана Seafood"  >
                                
                                 <div class="overlay-tumb">
                                     <p class="text-tumb">
@@ -123,7 +159,7 @@
                     <li class="box-content">
                         <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img4.jpg" alt="навушники" width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img4.jpg" alt="навушники">
                             
                             <div class="overlay-tumb">
                                 <p class="text-tumb">
@@ -142,7 +178,7 @@
                     <li class="box-content">
                         <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img5.jpg" alt="дві коробки" width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img5.jpg" alt="дві коробки" >
                            
                             <div class="overlay-tumb">
                                 <p class="text-tumb">
@@ -161,7 +197,7 @@
                     <li class="box-content">
                         <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img6.jpg" alt="екран комп'ютера з відкритим вебсайтом" width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img6.jpg" alt="екран комп'ютера з відкритим вебсайтом" >
                             
                             <div class="overlay-tumb">
                                 <p class="text-tumb">
@@ -181,7 +217,7 @@
                     <li class="box-content">
                         <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img7.jpg" alt="книга" width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img7.jpg" alt="книга" >
                             
                             <div class="overlay-tumb">
                                 <p class="text-tumb">
@@ -201,7 +237,7 @@
                     <li class="box-content">
                         <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img8.jpg" alt="бирка" width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img8.jpg" alt="бирка" >
                             
                             <div class="overlay-tumb">
                                 <p class="text-tumb">
@@ -221,7 +257,7 @@
                     <li class="box-content">
                         <a class="box-content-link" href="">
                             <div class="box-tumb">
-                            <img src="./images/portfolio/portfolio-img9.jpg" alt="ноутбук з відкритим вебсайтом" width="370">
+                            <img class="img-portfolio"  src="./images/portfolio/portfolio-img9.jpg" alt="ноутбук з відкритим вебсайтом" >
                             
                             <div class="overlay-tumb">
                                 <p class="text-tumb">
@@ -313,5 +349,7 @@
             </form>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -1,11 +1,24 @@
 .peculiarities {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px
+    gap: 30px
 }
 
 .peculiarities > .peculiarities__item {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 0px) / 1);
+}
+
+
+@media screen and(min-width: 768px) {
+    .peculiarities > .peculiarities__item {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .peculiarities > .peculiarities__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
 }
 
 .peculiarities__svg-icon {
