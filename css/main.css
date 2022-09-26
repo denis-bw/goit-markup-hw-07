@@ -149,12 +149,38 @@ body {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img_mobail/header-img-mobail.jpg");
   background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
   background-color: #2F303A;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .background-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img_mobail/header-img-mobail@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .background-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/header-img-tablet.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .background-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/header-img-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .background-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .background-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/bg@2x.jpg");
+  }
+}
 .footer-form {
   margin-left: auto;
 }
@@ -332,9 +358,22 @@ body {
   display: none;
 }
 
+.logo-text {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+
 @media screen and (min-width: 768px) {
   .logo-text {
     margin-right: 88px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .open-mobile-menu-btn {
     display: none;
@@ -392,7 +431,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -8px;
     background-color: var(--barand-color);
     border-radius: 2px;
     width: 100%;
@@ -402,8 +441,8 @@ body {
   }
   .menu-list2__link-header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     column-gap: 10px;
     padding: 1px;
     font-weight: 500;
@@ -421,8 +460,26 @@ body {
   .menu-list2 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
     margin-left: auto;
+  }
+  .menu-list2__icon-mail {
+    display: flex;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+  }
+  .menu-list2__icon-telef {
+    display: flex;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+  }
+  .main-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
   }
 }
 .open-mobile-menu-btn {
@@ -437,37 +494,34 @@ body {
   height: 40px;
 }
 
-.logo-text {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1, 19;
-  letter-spacing: 0.03em;
-  color: #000;
-}
-
 .logo-text-span {
   color: var(--barand-color);
 }
 
 @media screen and (min-width: 1200px) {
+  .current::after {
+    bottom: 0px;
+  }
   .logo-text {
     margin-right: 92px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .menu-list2 {
     flex-direction: row;
     display: flex;
+    align-items: flex-start;
     column-gap: 50px;
     margin-left: auto;
   }
   .menu-list2__icon-mail {
+    display: block;
     width: 16px;
     height: 12px;
     fill: currentColor;
   }
   .menu-list2__icon-telef {
+    display: block;
     width: 10px;
     height: 16px;
     fill: currentColor;
