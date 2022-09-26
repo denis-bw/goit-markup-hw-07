@@ -1232,6 +1232,9 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
   }
+  .section-3__img-what-does {
+    width: 370px;
+  }
 }
 .studio-section-link__text-icon {
   margin-bottom: 50px;
